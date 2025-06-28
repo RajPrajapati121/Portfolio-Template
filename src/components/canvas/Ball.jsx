@@ -7,10 +7,10 @@ import {
   Preload,
   useTexture,
 } from '@react-three/drei';
-import Loader from '../Loader';
+import Loader from '../Loader'; // Make sure you have a fallback loader
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+const Ball = ({ imgUrl }) => {
+  const [decal] = useTexture([imgUrl]);
 
   return (
     <Float speed={2.5} rotationIntensity={1} floatIntensity={2}>
@@ -37,14 +37,15 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
-      <Suspense fallback={<Loader />}>
-        <OrbitControls enableZoom={false} position0={0} />
-        <Ball imgUrl={icon} />
-      </Suspense>
-
-      <Preload all />
-    </Canvas>
+    <div className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px]">
+      <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
+        <Suspense fallback={<Loader />}>
+          <OrbitControls enableZoom={false} />
+          <Ball imgUrl={icon} />
+        </Suspense>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 };
 

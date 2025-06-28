@@ -31,18 +31,13 @@ const About = () => {
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Who I Am.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+        I'm a final-year Computer Engineering student with a strong passion for software development, artificial intelligence, machine learning, and modern web technologies. I enjoy turning complex problems into elegant, efficient solutions and constantly seek opportunities to learn, build, and innovate. With a solid foundation in both theoretical concepts and hands-on projects, I'm driven to contribute meaningfully to real-world tech challenges.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

@@ -17,9 +17,13 @@ import {
   postgresql,
   rubyrails,
   graphql,
-  komikult,
-  leaderboard,
-  math,
+  // komikult,
+  ESS,
+  apple,
+  // leaderboard,
+  // math,
+  agri,
+  ldrp,
   movie,
   nyeusi,
   space,
@@ -27,6 +31,11 @@ import {
   dcc,
   kelhel,
   microverse,
+  php,
+  mysql,
+  net,
+  angular
+  
 } from '../assets';
 
 export const navLinks = [
@@ -46,19 +55,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
+    title: 'Fullstack Developer',
     icon: frontend,
   },
   {
-    title: 'Backend Developer',
+    title: 'Python Developer',
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: '3D Web Developer',
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
+    title: 'AI & Machine Learning Developer',
     icon: prototyping,
   },
 ];
@@ -96,14 +105,14 @@ const technologies = [
     name: 'Node JS',
     icon: nodejs,
   },
-  {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
+  // {
+  //   name: 'Rails',
+  //   icon: rubyrails,
+  // },
+  // {
+  //   name: 'graphql',
+  //   icon: graphql,
+  // },
   {
     name: 'postgresql',
     icon: postgresql,
@@ -112,52 +121,68 @@ const technologies = [
     name: 'git',
     icon: git,
   },
-  {
-    name: 'figma',
-    icon: figma,
+   {
+    name: 'php',
+    icon: php,
   },
   {
-    name: 'docker',
-    icon: docker,
+    name: 'mysql',
+    icon: mysql,
   },
+   {
+    name: 'net',
+    icon: net,
+  },
+  {
+    name: 'Angular',
+    icon: angular,
+  },
+  // {
+  //   name: 'figma',
+  //   icon: figma,
+  // },
+  // {
+  //   name: 'docker',
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'National Level Hackathon',
+    company_name: 'DAIICT',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: '22 Sep 2023 - 24 Sep 2023',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'SIH',
+    company_name: 'Smart India Hackathon',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Mar 2024 - april 2024',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: 'Prodigy Infotech',
+    company_name: 'internship',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'May 2024 - Dec 2024',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: 'Tatvasoft',
+    company_name: 'internship',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Jan 2025 - Jun 2025',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Shayoka ESS',
+    description: 'A animated website for the IT Company.',
     tags: [
       {
         name: 'react',
@@ -172,15 +197,15 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: ESS,
+    repo: 'https://github.com/RajPrajapati121/Shayoka-Energy-Saving-System',
+    demo: 'https://www.shayokaess.com/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Apple-Phone',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'An iphone website made using three,js ,gsap,webgl.',
     tags: [
       {
         name: 'react',
@@ -195,14 +220,14 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
+    image: apple,
+    repo: 'https://github.com/RajPrajapati121/Apple-Store',
     demo: 'https://shaqdeff.github.io/Leaderboard/',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Placement-Portal',
+    description: 'A collage placement portal where students,company and collage easily interact with each other',
     tags: [
       {
         name: 'nextjs',
@@ -217,8 +242,8 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
+    image: ldrp,
+    repo: 'https://github.com/RajPrajapati121/LDRP-Placement-Portal',
     demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
   },
   {
@@ -240,14 +265,14 @@ const projects = [
       },
     ],
     image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
+    repo: 'https://github.com/RajPrajapati121/Movie-Metro',
     demo: 'https://movie-metro.netlify.app/',
   },
   {
     id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: 'Agrivista',
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
+      'It is ML model trained web where plant can be predicated according to their envirnoment.',
     tags: [
       {
         name: 'nextjs',
@@ -262,7 +287,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: nyeusi,
+    image: agri,
     repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
     demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
   },

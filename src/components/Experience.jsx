@@ -59,7 +59,7 @@ const Experience = () => {
           What I've done so far
         </p>
         <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
-          Work Experience.
+          Work Achievements.
         </h2>
       </motion.div>
 
@@ -68,6 +68,8 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
+
+          {/* Resume Download Button */}
           <VerticalTimelineElement
             contentStyle={{
               background: '#eaeaec',
@@ -100,12 +102,14 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  'resume link', //paste the link to your resume here
-                  '_blank'
-                )
-              }
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/RAJCV.pdf'; // File path relative to public/
+                link.download = 'Raj_Prajapati_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
               onMouseOver={() => {
                 document
                   .querySelector('.download-btn')

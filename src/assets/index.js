@@ -37,15 +37,25 @@ import typescript from './tech/typescript.png';
 import graphql from './tech/graphql.png';
 import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
+import php from './tech/php.jpg';
+import mysql from './tech/mysql.jpg';
+import net from './tech/net.jpg';
+import angular from './tech/angular.jpg';
+
+
 
 import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
-import komikult from './projects/komikult.png';
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
+// import komikult from './projects/komikult.png';
+import ESS from './projects/ESS.png';
+import agri from './projects/agri.png';
+// import komikult from './projects/komikult.png';
+import apple from './projects/apple.png';
+// import leaderboard from './projects/leaderboard.png';
+import ldrp from './projects/ldrp.png';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
@@ -86,9 +96,17 @@ export {
   redux,
   tailwind,
   typescript,
-  komikult,
-  leaderboard,
-  math,
+  php,
+  mysql,
+  net,
+  angular,
+  // komikult,
+  ESS,
+  apple,
+  // leaderboard,
+  // math,
+  ldrp,
+  agri,
   movie,
   nyeusi,
   space,
